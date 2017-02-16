@@ -1,0 +1,67 @@
+@media all and (max-width: 599px) {
+    body {
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 30px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px 0 20px 0;
+    }
+
+    input:required + label::after {
+        content: '*';
+        color: red;
+    }
+
+    textarea:required + label::after {
+        content: '*';
+        color: red;
+    }
+
+    #license + label::after {
+        content: '*';
+        color: red;
+    }
+
+    #license + label {
+        margin-left: 30px;
+        position: absolute;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        padding: 10px 0 10px 0;
+    }
+
+    .form input, textarea {
+        order: 1;
+    }
+
+    #save {
+        width: 100%;
+        background-color: white;
+        border-color: blue;
+        color: blue;
+        cursor: pointer;
+        height: 45px;
+    }
+
+    #save:hover {
+        background-color: blue;
+        color: white;
+    }
+
+    #address {
+        resize: vertical;
+    }
+}
